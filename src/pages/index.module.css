@@ -8,112 +8,121 @@
   padding: 0 0.5rem;
 }
 
-.main {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 5rem 0;
-}
+/* .back {
+  box-sizing: border-box;
+  width: ;
+} */
 
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-}
-
-.footer > a {
-  display: flex;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: center;
-}
-
-.title {
-  margin: 0;
-  font-size: 4rem;
-  line-height: 1.15;
-  text-align: center;
-}
-
-.title > a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title > a:hover,
-.title > a:focus,
-.title > a:active {
-  text-decoration: underline;
-}
-
-.description {
-  font-size: 1.5rem;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.code {
-  padding: 0.75rem;
-  font-family: Menlo, 'Monaco, Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono',
-    'Bitstream Vera Sans Mono', 'Courier New', monospace;
-  font-size: 1.1rem;
-  border-radius: 5px;
-}
-
-.grid {
+.backboard {
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  max-width: 800px;
-  margin-top: 3rem;
+  width: 350px;
+  height: 450px;
+  background-color: rgb(190 190 190);
+  border: solid 10px;
+  border-color: rgb(179 179 179) rgb(117 117 117) rgb(117 117 117) rgb(179 179 179);
 }
 
-@media (width <= 600px) {
-  .grid {
-    flex-direction: column;
-    width: 100%;
-  }
+.information {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 310px;
+  height: 70px;
+  background-color: rgb(190 190 190);
+  border: solid 5px;
+  border-color: rgb(117 117 117) rgb(179 179 179) rgb(179 179 179) rgb(117 117 117);
 }
 
-.card {
-  width: 45%;
-  padding: 1.5rem;
-  margin: 1rem;
-  color: inherit;
-  text-align: left;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition:
-    color 0.15s ease,
-    border-color 0.15s ease;
+.bombcount {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 40px;
+  margin-left: auto;
+  background-color: black;
+  border: solid 3px;
+  border-color: rgb(117 117 117) rgb(179 179 179) rgb(179 179 179) rgb(117 117 117);
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.faith {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(190 190 190);
+  border: solid 5px;
+  border-color: rgb(179 179 179) rgb(117 117 117) rgb(117 117 117) rgb(179 179 179);
 }
 
-.card > h2 {
-  margin: 0 0 1rem;
-  font-size: 1.5rem;
+.time {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 40px;
+  margin-right: auto;
+  background-color: black;
+  border: solid 3px;
+  border-color: rgb(117 117 117) rgb(179 179 179) rgb(179 179 179) rgb(117 117 117);
 }
 
-.card > p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.board {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 315px;
+  height: 315px;
+  background-color: rgb(190 190 190);
+  border: solid 5px;
+  border-color: rgb(117 117 117) rgb(179 179 179) rgb(179 179 179) rgb(117 117 117);
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.stylestop {
+  box-sizing: border-box;
+  display: flex;
+}
+
+.cell {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+  height: 37px;
+  background-color: rgb(212 212 212);
+  border: solid 10px;
+  border-color: white rgb(75 75 75) rgb(75 75 75) white;
+}
+
+.flame {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.89px;
+  height: 33.9px;
+  border: solid 0.5px;
+  border-color: rgb(75 75 75);
+}
+
+.sampleStyle {
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: url('~/src/assets/images/icons.png') no-repeat;
 }
