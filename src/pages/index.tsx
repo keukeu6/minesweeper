@@ -21,8 +21,9 @@ const Home = () => {
   const board = userInputs;
 
   const clickHandler = (x: number, y: number) => {
-    const bombPositions = initialBoard;
-    if (bombPositions === initialBoard) {
+    if (bombMap === initialBoard) {
+      const bombPositions = initialBoard;
+      console.log('一クリック目');
       let n = 0;
       while (n < 10) {
         const bombY = Math.floor(Math.random() * bombMap.length);
@@ -32,10 +33,11 @@ const Home = () => {
           n++;
         }
       }
+      setBombMap(bombPositions);
+    } else {
+      console.log('2クリック目');
+      // ２くりめいこう
     }
-    setBombMap(bombPositions);
-    console.table(bombPositions);
-    console.table(initialBoard);
   };
 
   return (
@@ -50,7 +52,7 @@ const Home = () => {
         </div>
         <div className={styles.board}>
           {board.map((row, y) =>
-            row.map((color, x) => (
+            row.map((color, x) =>(
               <div className={styles.flame} key={`${x}-${y}`} onClick={() => clickHandler(x, y)}>
                 <div
                   className={styles.sampleStyle}
