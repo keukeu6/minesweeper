@@ -35,6 +35,7 @@ const Home = () => {
     }
     setBombMap(bombPositions);
     console.table(bombPositions);
+    console.table(initialBoard);
   };
 
   return (
